@@ -21,9 +21,10 @@
         </activity>
 
         <!-- Main activity -->
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
 
-        </activity>
+        <!-- Movies activity -->
+        <activity android:name=".movies.presentation.view.MoviesActivity" />
     </application>
 
 </manifest>
