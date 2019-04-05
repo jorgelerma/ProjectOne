@@ -9,7 +9,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.infos.root.projectone.R
 import com.infos.root.projectone.movies.presentation.adapters.MovieGenreDetailsAdapter
-import kotlinx.android.synthetic.main.activity_movie_genre_detail.view.*
 
 class MovieGenreDetailFragment : Fragment() {
 
