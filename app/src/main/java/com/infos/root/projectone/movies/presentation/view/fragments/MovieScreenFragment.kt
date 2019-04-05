@@ -23,25 +23,25 @@ class MovieScreenFragment : Fragment(), View.OnClickListener {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val view = inflater?.inflate(R.layout.fragment_movie_screen, container, false)
+        val view = inflater.inflate(R.layout.fragment_movie_screen, container, false)
         view.populars_movies.setOnClickListener(this)
         view.top_rated_movies.setOnClickListener(this)
         view.upcoming_movies.setOnClickListener(this)
         return view
     }
 
-    override fun onClick(v: View?) {
-        when(v?.id){
-            populars_movies.id -> startMovieDetail("Popular")
-            top_rated_movies.id -> startMovieDetail("Top rated")
-            upcoming_movies.id -> startMovieDetail("Upcoming")
+    override fun onClick(movieGenre: View?) {
+        when(movieGenre?.id){
+            populars_movies.id -> startMovieDetail(resources.getString(R.string.popular_movies))
+            top_rated_movies.id -> startMovieDetail(resources.getString(R.string.top_rated_movies))
+            upcoming_movies.id -> startMovieDetail(resources.getString(R.string.upcoming_movies))
         }
     }
 
-    fun startMovieDetail(movieType: String){
+    private fun startMovieDetail(movieType: String){
         val intent = Intent(this.context, MovieGenreDetailActivity::class.java)
         val bundle = Bundle()
-        bundle.putString("Title", movieType)
+        bundle.putString(resources.getString(R.string.toolbar_title), movieType)
         intent.putExtras(bundle)
         startActivity(intent)
     }

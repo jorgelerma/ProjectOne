@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.infos.root.projectone.R
 
-class MovieGenreDetailsAdapter(private val myDataset: ArrayList<String>) :
+class MovieGenreDetailsAdapter(private val moviesDataset: ArrayList<String>) :
     RecyclerView.Adapter<MovieGenreDetailsAdapter.MyViewHolder>() {
 
     class MyViewHolder(val textView: TextView) : RecyclerView.ViewHolder(textView)
@@ -20,8 +20,8 @@ class MovieGenreDetailsAdapter(private val myDataset: ArrayList<String>) :
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.textView.text = myDataset[position]
+        holder.textView.text = moviesDataset[position]
     }
 
-    override fun getItemCount() = myDataset.size
+    override fun getItemCount() = moviesDataset.size
 }
