@@ -29,7 +29,7 @@ class MovieGenreDetailFragment : Fragment() {
         viewManager = LinearLayoutManager(container?.context)
         loadsInfo()
         viewAdapter = MovieGenreDetailsAdapter(myDataset)
-        val view = inflater?.inflate(R.layout.fragment_movie_genre_detail, container, false)
+        val view = inflater.inflate(R.layout.fragment_movie_genre_detail, container, false)
 
         recyclerView = view.findViewById<RecyclerView>(R.id.movie_genre_details_rv).apply {
             setHasFixedSize(true)
@@ -39,7 +39,7 @@ class MovieGenreDetailFragment : Fragment() {
         return view
     }
 
-    fun loadsInfo(){
+    private fun loadsInfo(){
         myDataset.add("Avengers")
         myDataset.add("I know what you did")
     }

@@ -13,12 +13,12 @@ class MovieGenreDetailActivity: AppCompatActivity() {
         setContentView(R.layout.activity_movie_genre_detail)
 
         val bundle = intent.extras
-        val toolbarTitle = bundle.getString("Title")
+        val toolbarTitle = bundle?.getString(resources.getString(R.string.toolbar_title))
 
-        toolbar_genre_title.setText(toolbarTitle)
+        toolbar_genre_title.text = toolbarTitle
             supportFragmentManager
                 .beginTransaction()
-                .add(R.id.movies_genre_detail_fragment, MovieGenreDetailFragment.newInstance(), "genreDetail")
+                .add(R.id.movies_genre_detail_fragment, MovieGenreDetailFragment.newInstance(), this.javaClass.simpleName)
                 .commit()
     }
 }

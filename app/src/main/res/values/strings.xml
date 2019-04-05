@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Project One</string>
+
+    <!-- Movie component -->
+    <string name="popular_movies">Popular</string>
+    <string name="top_rated_movies">Top rated</string>
+    <string name="upcoming_movies">Upcoming</string>
+    <string name="toolbar_title">Title</string>
+    <string name="movies_title">Movies</string>
+    <string name="movie_logo">movie logo</string>
+
 </resources>
