@@ -10,18 +10,15 @@ import com.infos.root.projectone.R
 
 class SplashActivity : AppCompatActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-//        val intent = Intent(this, MainActivity::class.java)
         val intent = Intent(this, MoviesActivity::class.java)
 
         Handler().postDelayed({
             startActivity(intent)
-            Log.e(this.localClassName, " @ splash")
             finish()
-        }, 2000)
+        }, 500)
     }
 }
