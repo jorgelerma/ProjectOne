@@ -8,5 +8,6 @@
     <string name="toolbar_title">Title</string>
     <string name="movies_title">Movies</string>
     <string name="movie_logo">movie logo</string>
+    <string name="fragment_main_id">main fragment</string>
 
 </resources>
