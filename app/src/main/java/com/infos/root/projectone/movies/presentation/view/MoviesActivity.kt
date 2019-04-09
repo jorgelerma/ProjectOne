@@ -2,19 +2,17 @@ package com.infos.root.projectone.movies.presentation.view
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import com.infos.root.projectone.R
-import com.infos.root.projectone.movies.presentation.presenters.MoviesPresenter
+import com.infos.root.projectone.movies.presentation.presenters.MoviesContract
 import com.infos.root.projectone.movies.presentation.view.fragments.MovieScreenFragment
 import com.infos.root.projectone.movies.presentation.view.fragments.PopularMoviesFragment
 import com.infos.root.projectone.movies.presentation.view.fragments.TopRatedMoviesFragment
 import com.infos.root.projectone.movies.presentation.view.fragments.UpcomingMoviesFragment
-import kotlinx.android.synthetic.main.activity_movie_genre_detail.*
 import kotlinx.android.synthetic.main.activity_movies.*
 import kotlinx.android.synthetic.main.fragment_movie_screen.*
 
 
-class MoviesActivity : AppCompatActivity(), MoviesPresenter {
+class MoviesActivity : AppCompatActivity(), MoviesContract.MovieView {
 
     val fragmentManager = supportFragmentManager
     val movieScreenFragment = MovieScreenFragment.newInstance()

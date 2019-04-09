@@ -6,13 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.infos.root.projectone.R
-import com.infos.root.projectone.movies.presentation.presenters.MoviesPresenter
+import com.infos.root.projectone.movies.presentation.presenters.MoviesContract
 import kotlinx.android.synthetic.main.fragment_movie_screen.view.*
 
 
 class MovieScreenFragment : Fragment(), View.OnClickListener {
 
-    lateinit var movieAct: MoviesPresenter
+    private lateinit var movieAct: MoviesContract.MovieView
 
     companion object {
 
@@ -21,7 +21,7 @@ class MovieScreenFragment : Fragment(), View.OnClickListener {
         }
     }
 
-    fun setMovieActivity(movieAct: MoviesPresenter) {
+    fun setMovieActivity(movieAct: MoviesContract.MovieView) {
         this.movieAct = movieAct
     }
 
