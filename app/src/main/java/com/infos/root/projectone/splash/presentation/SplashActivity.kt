@@ -4,7 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.infos.root.projectone.movies.presentation.view.MoviesActivity
+import com.infos.root.projectone.movies.presentation.view.activities.MoviesActivity
 import com.infos.root.projectone.R
 
 class SplashActivity : AppCompatActivity() {

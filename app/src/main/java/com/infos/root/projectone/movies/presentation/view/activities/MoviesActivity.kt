@@ -1,4 +1,4 @@
-package com.infos.root.projectone.movies.presentation.view
+package com.infos.root.projectone.movies.presentation.view.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -20,8 +20,7 @@ class MoviesActivity : AppCompatActivity(), MoviesContract.MovieView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movies)
-
-        movieScreenFragment.setMovieActivity(this)
+        
         fragmentManager
                 .beginTransaction()
                 .add(R.id.movies_fragment, movieScreenFragment,
