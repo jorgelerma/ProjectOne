@@ -28,10 +28,10 @@
         </activity>
 
         <!-- Movies activity -->
-        <activity android:name=".movies.presentation.view.MoviesActivity" />
+        <activity android:name=".movies.presentation.view.activities.MoviesActivity" />
 
         <!-- Movie genre detail activity -->
-        <activity android:name=".movies.presentation.view.MovieGenreDetailActivity" />
+        <activity android:name=".movies.presentation.view.activities.MovieGenreDetailActivity" />
     </application>
 
 </manifest>

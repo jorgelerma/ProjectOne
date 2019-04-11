@@ -1,4 +1,4 @@
-package com.infos.root.projectone.movies.presentation.view
+package com.infos.root.projectone.movies.presentation.view.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
